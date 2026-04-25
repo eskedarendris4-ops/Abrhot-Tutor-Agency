@@ -1,0 +1,350 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+   --primary-color: #8490ff;
+   --secondary-color: #212121;
+   --bg: #fff;
+   --text-color: #333;
+   --bg-gray: #f2f2f2;
+   --header-green-color: #36ed22; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.brand-logo-name {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.75rem;
+    padding: 5px;
+    font: Times New Roman; 
+    
+}
+
+a {
+    text-decoration: none;
+    color: #8490ff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #212121;
+}
+
+.header {
+    padding: 1.6rem 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #36ed22;
+    box-shadow: 0px 0px 20px 0px rgba(132, 144, 255, 0.2);
+    width: 100%;
+    height: 10vh;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    margin-right: 20px;
+    
+   
+    
+}
+
+.navbar-lists {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+}
+
+.navbar-lists li {
+    margin-right: 20px;
+}
+
+.navbar-lists call-btn{
+   font-weight: bold;
+    box-shadow: 0 4px 8px rgba9(0, 0, 0, 0.1);
+     border-radius: 10px;
+    padding: 20px;
+   margin: 20px;
+    
+}
+
+.navbar-lists li:last-child 
+{
+   margin-right: 0;
+}
+
+.navbar-link {
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+@media screen and(max-width: 768px){
+      display: none;
+      position: absolute;
+      top:60px;
+      left: 0;
+      background-color: #3beb2b;
+      width: 100%;
+      padding-top: 10px;
+      z-index: 998;
+}
+
+.navbar-lists.responsive{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.navbar-lists.responsive li{
+     margin:10px 0;
+}
+.navbar-link{
+   padding:10px 20px;
+}
+
+
+
+.school-img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    color: darken;
+}
+
+.img container {
+    position: relative;
+}
+
+.img-title {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #1bf346;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    animation: img-blink 2s infinite alternate
+}
+
+@keyframes img-blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+#Vision {
+    padding: 4rem 0;
+    background-color: rgba(28, 225, 97);
+}
+
+#Vision h2 {
+    text-align: center;
+    color: var(--bg);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#Vision p {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.main-notice-section {
+    background-color: var(--bg);
+    padding: 4rem 0;
+    margin-left: 3rem;
+    overflow: auto;
+}
+
+.notice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.notice-board, 
+.event-card {
+    width: 50%;
+    margin-botton: 2rem;
+}
+
+.notice-board {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shaow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notice-board h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    margin-left: 5rem;
+}
+
+.notice-board li {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.notice-board li img {
+    width; 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.notice-boar li p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.event-card {
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba9(0, 0, 0, 0.1);
+}
+
+.event-card .event-heading {
+     color: var(--header-green-color);
+     margin-bottom: 1.5rem;
+     font-size: 1.75rem;
+     text-align: center;
+}
+
+.event-details {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.event {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    animation: fadeInU 1s ease forwards;
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+
+    background-color 0.3s ease;
+    cursor: pointer;    
+}
+
+.event:hover {
+   transform: translate(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   background-color: #1bf346;
+   color:#fff
+
+}
+
+.event h3 {
+     color: var(--secondary-color);
+     margin-bottom: 0.5rem;
+}
+
+.event p {
+  margin-bottom: 0.5rem; 
+}
+
+@keyframes fadeInUp {
+    0% {
+         opacity; 0;
+         transform: translate(20px);
+           }
+
+          100% {
+              opacity: 1;
+              transform: translate(0);
+      }
+}
+
+@media screen and(max-width:768px) {
+   .notice-container { flex-direction: column; }
+   .notice-board, .event-card { width: calc(100%-20%); margin-left:auto; margin-right: auto; }
+   .event-card { margin-top: 2rem; } }
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(---secondary-color);
+    color: #fff;
+    height: 10vh;
+}
+
+.aboutus-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.subheading {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+#about-us-section {
+    background: rgba(28, 225, 97);
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding-bottom: 20px;
+    border: 3px solid rgb(28, 225, 97);
+    border-radius: 5px;
+
+}
+
+.about-us-section p {
+       margin-bottom: 30px;
+}
+
+.about-us-container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+@media screen and(max-width:768px) { 
+         .aboutus-heading { font-size: 2rem; }
+         .about.us.container p { font-size: 1rem; } }
+
+.contact-info {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f7f7f7; }
+.contact-info h2 { margin-bottom:20px; }
+.contact-info a { margin-right:20px; }
